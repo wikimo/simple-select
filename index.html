@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<title>Simple Select</title>
+<link rel="stylesheet" href="public/css/simple-select.css">
+<link rel="stylesheet" href="public/css/font-awesome.min.css">
+</head>
+<body>
+
+<div id="demo">
+  <span class="simple-select">
+    <a href="#" class="ss-dropdown" data-name="item">Select Item</a><i class="icon-angle-right"></i>
+    <ul>
+      <li><a href="#" data-value="item-1">Item-1</a></li>
+      <li><a href="#" data-value="item-2">Item-2</a></li>
+      <li><a href="#" data-value="item-3">Item-3</a></li>
+      <li><a href="#" data-value="0">Select Item</a></li>
+    </ul>
+  </span>
+</div>
+
+
+<script type="text/javascript" src="public/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="public/js/simple-select.js"></script>
+<script type="text/javascript">
+$(function(){
+  $('.simple-select').simpleSelect();
+})
+</script>
+</body>
+</html>

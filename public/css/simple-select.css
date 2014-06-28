@@ -1,0 +1,41 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+#demo{
+  width: 960px;
+  margin: 20px auto;
+}
+.simple-select{
+  border: 2px solid #ea4e07;
+  padding: 6px 10px;
+  position: relative;
+}
+.simple-select  i{
+  margin: 5px 0 0 5px;
+ 
+}
+.simple-select a{
+  color: #575757;
+}
+.simple-select ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  background: #fff;
+  border: 1px solid #d8d8d8;
+}
+.simple-select ul a {
+  padding: 5px 9px;
+  display: inline-block;
+  white-space: nowrap;
+  color: #575757;
+}
