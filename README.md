@@ -37,3 +37,6 @@ $(function(){
 })
 </script>
 ```
+
+## Demo
+[Click Here](http://dev.365jinbi.com/simple-select/)
