@@ -5,8 +5,23 @@
 
     this.each(function(){
       var parent = $(this);
+      var select = parent.find('select');
+      parent.append('<a href="#" class="ss-dropdown" data-name="'+select.attr('name')+'">'+select.attr('data-name')+'</a><i class="icon-angle-right"></i>');
+
+      var options = parent.find('option');
+      parent.append('<ul></ul>');
+      var ul = parent.find('ul');
+
+      for (var i = 0; i <= options.length; i++) {
+        var opt = $(options[i]);
+        if(opt.html() != undefined)
+          ul.append('<li><a href="#" data-value="'+$(opt).val()+'">'+$(opt).html()+'</a></li>')
+      }
+
+ 
       parent.on('click','.ss-dropdown',function(){
         parent.find('ul').toggle();
+
 
         var i = parent.find('i');
         if (i.attr('class') == 'icon-angle-right') {
@@ -22,6 +37,7 @@
       var ul = parent.find('ul');
       ul.on('click','a',function(){
         ul.toggle();
+
 
         //find each input[hidden]
         var input = parent.find('input[type=hidden]');

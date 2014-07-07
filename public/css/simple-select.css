@@ -17,10 +17,14 @@ a{
   border: 2px solid #ea4e07;
   padding: 6px 10px;
   position: relative;
+  display: inline-block;
 }
 .simple-select  i{
   margin: 5px 0 0 5px;
  
+}
+.simple-select select{
+  display: none;
 }
 .simple-select a{
   color: #575757;
