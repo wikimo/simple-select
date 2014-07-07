@@ -1,6 +1,6 @@
-#Simple Select With Jquery
+#Simple Select
 
-A simple select control with jquery,because the html select can not update with css.
+A simple select with jquery,because the html select can not deal with css.
 
 ##How to use
 * step 1
