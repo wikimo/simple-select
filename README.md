@@ -40,3 +40,7 @@ $(function(){
 
 ## Demo
 [Click Here](http://dev.365jinbi.com/simple-select/)
+
+## Todo
+* click body to close when the select is open;
+* set select checked replace input hidden;
